@@ -4,6 +4,9 @@ const countDown = document.getElementById('countdown')
 const listNumber = document.getElementById('number-list')
 const message = document.getElementById('message')
 const instructions = document.getElementById('instructions')
+ const button = document.getElementById('confirm')
+
+
 
 const getRandomNumbers = (min, max, tot) => {
     const numbers = []
@@ -43,5 +46,33 @@ const startCountDown = setInterval(() =>{
 
     time--
 }, 1000);
+
+let answers =document.querySelectorAll(".form-control")
+
+
+const isOrderCorrect = (answers, numbers) => {
+    console.log(answers)
+    console.log(numbers)
+    let count=0
+    for( let i=0; i<5; i++){
+        if(numbers.includes(parseInt(answers[i].value))){
+            count++
+           
+        }
+            
+    }
+
+    return "Hai indovinato "+ count+ " numeri" ;
+}
+
+
+ button.addEventListener('click', (e)=>{
+    e.preventDefault()
+    message.innerText=isOrderCorrect(answers, numbers)
+    
+    
+ })
+
+
 
 
