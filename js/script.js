@@ -18,3 +18,7 @@ const min = 1;
 const max = 50;
 const total = 5
 let time = 10;
+
+const numbers = getRandomNumbers(min, max, total)
+
+let items= ''
