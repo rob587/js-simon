@@ -1,0 +1,6 @@
+const form = document.getElementById('answers-form')
+const input = document.querySelectorAll('input')
+const countDown = document.getElementById('countdown')
+const listNumber = document.getElementById('number-list')
+const message = document.getElementById('message')
+const instructions = document.getElementById('instructions')
