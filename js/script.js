@@ -4,3 +4,8 @@ const countDown = document.getElementById('countdown')
 const listNumber = document.getElementById('number-list')
 const message = document.getElementById('message')
 const instructions = document.getElementById('instructions')
+
+const getRandomNumbers = (min, max, tot) => {
+    const numbers = []
+    
+}
