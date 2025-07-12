@@ -30,3 +30,18 @@ for (let number of numbers) {
 
 document.getElementById('numbers-list').innerHTML = items;
 
+
+const startCountDown = setInterval(() =>{
+    countDown.innerText = time
+
+    if(time=== 0){
+        clearInterval(startCountDown);
+        document.getElementById('numbers-list').classList.add('d-none');
+        form.classList.remove('d-none');
+        instructions.innerText = "Inserisci i numeri che ricordi"
+    }
+
+    time--
+}, 1000);
+
+
