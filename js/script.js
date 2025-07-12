@@ -13,3 +13,8 @@ const getRandomNumbers = (min, max, tot) => {
     }
     return numbers;
 }
+
+const min = 1;
+const max = 50;
+const total = 5
+let time = 10;
