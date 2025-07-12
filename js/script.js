@@ -22,3 +22,11 @@ let time = 10;
 const numbers = getRandomNumbers(min, max, total)
 
 let items= ''
+
+
+for (let number of numbers) {
+    items += `<li class="fs-3">${number}</li>`
+}
+
+document.getElementById('numbers-list').innerHTML = items;
+
