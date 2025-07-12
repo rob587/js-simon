@@ -7,5 +7,9 @@ const instructions = document.getElementById('instructions')
 
 const getRandomNumbers = (min, max, tot) => {
     const numbers = []
-    
+    while(numbers.length<tot){
+        const randomNumber = Math.floor(Math.random()* (max-min+1)) + min
+        if (!numbers.includes(randomNumber)) numbers.push(randomNumber)
+    }
+    return numbers;
 }
